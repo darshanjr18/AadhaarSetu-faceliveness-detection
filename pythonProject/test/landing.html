@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIDAI Aadhaar Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #0d47a1;
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+            border-bottom: 5px solid #f5b400;
+        }
+
+        header img {
+            width: 180px;
+        }
+
+        /* Main container */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        /* Login box styling */
+        .login-box {
+            background-color: white;
+            width: 400px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 0px;
+        }
+
+        .login-box h2 {
+            font-size: 24px;
+            color: #0d47a1;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .login-box p {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        /* Form input fields */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #0d47a1;
+            box-shadow: 0px 0px 5px rgba(0, 71, 161, 0.2);
+        }
+
+        /* CAPTCHA box */
+        .captcha-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .captcha-box img {
+            width: 80%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        /* Submit button */
+        .submit-btn {
+            width: 100%;
+            background-color: #1e62c9;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #002f6c;
+        }
+
+        /* Link section */
+        .link-container {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .link-container a {
+            color: #0d47a1;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .link-container a:hover {
+            color: #f5b400;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #f0f0f0;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://uidai.gov.in/images/logo/aadhaar_english_logo.svg" alt="Aadhaar Logo">
+</header>
+
+<div class="container">
+    <div class="login-box">
+        <h2>Login with Aadhaar</h2>
+        <p>Please enter your Aadhaar number and verify user below to continue.</p>
+
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Aadhaar Number (12 digits)" maxlength="12" required>
+            </div>
+           
+            
+            <button type="button" class="submit-btn">Verify User
+                <a href="index.html" class="submit-btn"> </a>
+            </button>
+            
+
+        </form>
+
+        <div class="link-container">
+            <a href="#">Forgot Aadhaar Number?</a><br>
+            <a href="#">Don't have an account? Register Here</a>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    &copy; 2024 Unique Identification Authority of India, All Rights Reserved.
+</footer>
+
+
+<script>
+
+document.getElementById("submit-btn").onclick = function() {
+        // Redirect to the desired URL
+        window.location.href = "index.html";}
+</script>
+
+</body>
+</html>
+
+
+
+
